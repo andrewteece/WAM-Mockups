@@ -205,17 +205,6 @@ header.header {
   box-shadow: var(--shadow-md);
   transform: translateY(-3px);
 }
-.bannerCtas .secondary {
-  background: transparent;
-  color: var(--brand-blue-strong);
-  border: 1px solid rgba(3, 58, 130, 0.06);
-  padding: 12px 20px;
-  border-radius: 999px;
-  font-weight: 700;
-  min-height: 48px;
-  display: inline-flex;
-  align-items: center;
-}
 
 .trustRow {
   display: flex;
@@ -449,7 +438,7 @@ footer {
     gap: 8px;
     padding: 10px 14px;
     border-radius: 10px;
-    border: 1px solid rgba(3, 58, 130, 0.06);
+    border: 1px solid rgba(3, 58, 130, 0.14);
     background: transparent;
     color: var(--brand-blue-strong);
     font-weight: 700;
@@ -469,7 +458,7 @@ footer {
   .btn.ghost {
     background: transparent;
     color: var(--brand-blue);
-    border: 1px solid rgba(3, 58, 130, 0.06);
+    border: 1px solid rgba(3, 58, 130, 0.14);
     padding: 10px 14px;
     border-radius: 10px;
     box-shadow: none;
@@ -498,7 +487,7 @@ footer {
   /* Ensure button.secondary mirrors anchor.secondary */
   button.secondary {
     background: transparent;
-    border: 1px solid rgba(3, 58, 130, 0.06);
+    border: 1px solid rgba(3, 58, 130, 0.14);
     color: var(--brand-blue-strong);
     cursor: pointer;
     padding: 10px 14px;
