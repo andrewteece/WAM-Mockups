@@ -471,17 +471,17 @@ footer {
   padding: 6px; /* reduce internal padding so the product fills more area */
 }
 .whyWhat .phoneImg {
-  /* With a cropped asset we can use a much cleaner sizing rule:
-     - width slightly over 100% gives a subtle bleed into the rounded card
-     - minimal transform keeps the product sharp and predictable */
-  width: 105%;
-  max-width: none;
-  height: auto;
+  /* Use contain so the full illustration is visible inside the mock card.
+     Avoid heavy transforms that can clip content — the cropped asset already
+     removes whitespace so we can show the whole composition reliably. */
+  width: auto;
+  max-width: 100%;
+  height: 100%;
   border-radius: 8px;
-  object-fit: cover;
-  /* nudge less to avoid cutting off left-side detail after cropping */
-  transform: translateX(-6%) translateY(-4px) scale(1.03);
-  will-change: transform;
+  object-fit: contain;
+  object-position: center;
+  transform: none;
+  will-change: auto;
 }
 .whyWhat .visual {
   display: flex;
@@ -913,8 +913,10 @@ footer {
   left: calc(
     (100% - 1200px) / 2 + 24px
   ); /* align with container left + gutter */
-  /* On smaller screens this will naturally shift; acceptable for marketing pages */
-  top: calc(var(--section-accent-top, 50%) - 12px);
+  /* Keep the accent bar aligned near the top of the heading so it
+     doesn't intersect paragraph text below. Using a fixed offset is
+     more predictable across varied section heights. */
+  top: 10px;
   width: 44px;
   height: 6px;
   background: linear-gradient(
