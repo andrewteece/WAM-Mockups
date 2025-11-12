@@ -49,8 +49,8 @@ const LandingA: NextPage = () => {
           <div className='whyGrid'>
             <div className='whyMedia'>
               <Image
-                src='/images/wam-overview-no-background.png'
-                alt='How WAM works illustration'
+                src='/images/wam-devices.png'
+                alt='WAM devices illustration'
                 width={720}
                 height={380}
               />
