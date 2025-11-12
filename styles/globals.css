@@ -431,9 +431,9 @@ footer {
 .whyWhatInner {
   display: grid;
   /* give the visual more real estate so the overview illustration can be larger */
-  grid-template-columns: 1fr 640px;
+  grid-template-columns: 1fr minmax(420px, 52%);
   gap: 64px;
-  align-items: center;
+  align-items: start;
 }
 .whyWhat .copy h2 {
   font-size: clamp(28px, 3.4vw, 40px);
@@ -452,7 +452,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 18px; /* slightly tighter so image can scale up */
+  padding: 12px; /* tighter so image can scale up */
   border-radius: 18px;
   box-shadow: 0 36px 80px rgba(2, 28, 49, 0.06);
   border: 1px solid rgba(3, 58, 130, 0.035);
@@ -461,15 +461,16 @@ footer {
     rgba(255, 255, 255, 0.95),
     rgba(250, 252, 255, 0.98)
   );
-  transform: translateX(4px); /* reduced offset for better alignment */
+  transform: translateX(2px); /* reduced offset for better alignment */
+  overflow: hidden; /* crop oversized illustration cleanly */
 }
 .whyWhat .phoneImg {
-  width: 96%;
+  width: 130%;
+  max-width: none;
   height: auto;
-  border-radius: 10px;
-  /* allow the illustration to scale larger while keeping a little gutter */
-  max-width: 760px;
-  object-fit: contain;
+  border-radius: 8px;
+  object-fit: cover;
+  transform: translateX(-8%) translateY(-4px) scale(1.02);
 }
 .whyWhat .visual {
   display: flex;
@@ -663,7 +664,7 @@ footer {
 
 /* Solution-focused hero (Stripe-like) */
 .solutionHero {
-  padding: 120px 0 56px; /* bigger top space, tighter bottom so visual can overlap */
+  padding: 120px 0 36px; /* bigger top space, tighter bottom so visual can overlap */
   background: linear-gradient(180deg, #ffffff, #f8fbff);
   position: relative;
   overflow: visible;
