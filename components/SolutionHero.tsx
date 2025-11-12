@@ -18,7 +18,8 @@ export default function SolutionHero() {
           </div>
 
           <h1 className='heroTitle'>
-            Protect critical assets with 24/7 environmental monitoring
+            Protect your valuable assets with real-time monitoring that gives
+            you peace of mind!
           </h1>
 
           <p className='heroSub muted'>
@@ -29,31 +30,6 @@ export default function SolutionHero() {
           <div className='bannerCtas'>
             <button className='btn'>Request Demo</button>
             <button className='secondary'>Get Datasheet</button>
-          </div>
-
-          {/* Trust logos moved below CTAs for visual hierarchy */}
-          <div className='trustRow muted' aria-hidden='true'>
-            <span>Trusted by</span>
-            <div className='trustLogos'>
-              <Image
-                src='/images/logo.png'
-                alt='BAPI'
-                width={100}
-                height={30}
-              />
-              <Image
-                src='/images/wam-logo.png'
-                alt='WAM'
-                width={80}
-                height={30}
-              />
-              <Image
-                src='/images/wam-sensors-with-gateway.png'
-                alt='Sensors with Gateway'
-                width={140}
-                height={30}
-              />
-            </div>
           </div>
         </div>
 

@@ -107,11 +107,14 @@ header.header {
 }
 .logoLink img {
   display: block;
+  height: 28px; /* slightly smaller BAPI wordmark for a lighter header */
+  width: auto;
 }
 .header .container {
   display: flex;
   align-items: center;
   gap: 20px;
+  padding: 12px 0; /* tighter header spacing */
 }
 .navLinks a {
   margin-left: 18px;
