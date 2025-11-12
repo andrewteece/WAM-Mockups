@@ -552,16 +552,39 @@ footer {
 
 /* Solution-focused hero (Stripe-like) */
 .solutionHero {
-  padding: 110px 0 72px; /* more top breathing room like senior marketing sites */
+  padding: 120px 0 56px; /* bigger top space, tighter bottom so visual can overlap */
   background: linear-gradient(180deg, #ffffff, #f8fbff);
+  position: relative;
+  overflow: visible;
+}
+.solutionHero::before {
+  /* subtle colorful accent in the top-left like Stripe */
+  content: '';
+  position: absolute;
+  left: -6%;
+  top: -6%;
+  width: 58%;
+  height: 260px;
+  background: radial-gradient(
+    600px 200px at 10% 20%,
+    rgba(108, 92, 231, 0.08),
+    rgba(0, 114, 206, 0.04) 40%,
+    transparent 60%
+  );
+  pointer-events: none;
+  transform: rotate(-6deg);
+  z-index: 0;
 }
 .solutionHero .bannerInner {
-  align-items: center;
-  gap: 56px;
+  align-items: flex-start; /* left column aligns to top for a marketing feel */
+  gap: 64px;
+  position: relative;
+  z-index: 2;
 }
 .solutionHero .heroContent {
   flex: 1;
-  max-width: 520px; /* slightly narrower measure for improved readability */
+  max-width: 480px; /* narrower measure for strong hierarchy */
+  padding-top: 6px;
 }
 .solutionHero .eyebrow {
   font-size: 12px;
@@ -572,31 +595,44 @@ footer {
   margin-bottom: 16px;
 }
 .solutionHero .heroTitle {
-  font-size: 48px; /* large but more balanced than 52 */
+  font-size: 56px; /* bold, senior-level headline */
   margin: 0 0 18px;
-  line-height: 1.04;
+  line-height: 1.03;
   color: var(--dark);
-  font-weight: 800;
+  font-weight: 900;
+  letter-spacing: -0.02em;
 }
 .solutionHero .heroSub {
   font-size: 18px;
   margin-bottom: 28px;
   color: var(--muted);
-  max-width: 48ch; /* keep line-length comfortable */
+  max-width: 46ch; /* comfortable line-length */
   line-height: 1.6;
 }
 .solutionHero .heroVisual {
-  flex: 0 0 480px; /* reduce visual dominance so text breathes more */
+  flex: 0 0 520px; /* allow a slightly larger visual that floats */
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  transform: translateY(-48px); /* lift visual to overlap sections below */
 }
 .solutionHero .visualInner {
   background: var(--surface);
-  padding: 26px;
-  border-radius: 18px;
-  box-shadow: 0 40px 120px rgba(12, 22, 30, 0.06);
-  border: 1px solid rgba(3, 58, 130, 0.03);
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: 0 50px 140px rgba(12, 22, 30, 0.08);
+  border: 1px solid rgba(3, 58, 130, 0.04);
+}
+
+.solutionHero .trustRow {
+  margin-top: 8px;
+}
+
+.solutionHero .bannerCtas {
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
 .trustRow {
   display: flex;
