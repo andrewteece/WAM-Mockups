@@ -28,8 +28,22 @@ export default function BannerB() {
         </div>
 
         <div className='bannerBVisual' aria-hidden='true'>
-          <div className='floatingChart' />
-          <div className='floatingNodes' />
+          <div className='floatingChart'>
+            <Image
+              src='/images/wam-overview-no-background.png'
+              alt='WAM overview diagram'
+              fill
+              style={{ objectFit: 'cover', borderRadius: 8 }}
+            />
+          </div>
+          <div className='floatingNodes'>
+            <Image
+              src='/images/wam-logo.png'
+              alt='WAM logo'
+              width={48}
+              height={48}
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function BannerA() {
   return (
     <section className='banner bannerA' aria-labelledby='banner-a-title'>
@@ -21,7 +23,14 @@ export default function BannerA() {
 
         <div className='bannerRight' aria-hidden='true'>
           <div className='deviceHero'>
-            <div className='deviceFace'>WAM</div>
+            <div className='deviceFace'>
+              <Image
+                src='/images/wam-devices.png'
+                alt='WAM devices'
+                width={260}
+                height={156}
+              />
+            </div>
             <div className='deviceSpecs'>
               <div>
                 <strong>±0.3°C</strong> accuracy
