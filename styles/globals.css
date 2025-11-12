@@ -209,8 +209,12 @@ header.header {
   background: transparent;
   color: var(--brand-blue-strong);
   border: 1px solid rgba(3, 58, 130, 0.06);
-  padding: 10px 14px;
-  border-radius: 10px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .trustRow {
@@ -481,12 +485,26 @@ footer {
   }
 
   /* Make small CTA variants a touch larger and pill-like in banner areas */
+  /* Make small CTA variants a touch larger and pill-like in banner areas */
   .bannerCtas .secondary {
-    padding: 10px 16px;
+    padding: 12px 20px;
     border-radius: 999px;
     font-weight: 700;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
   }
-  border: 1px solid #e8f2f9;
+
+  /* Ensure button.secondary mirrors anchor.secondary */
+  button.secondary {
+    background: transparent;
+    border: 1px solid rgba(3, 58, 130, 0.06);
+    color: var(--brand-blue-strong);
+    cursor: pointer;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-weight: 700;
+  }
 }
 .product-hero {
   display: flex;
