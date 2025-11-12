@@ -21,6 +21,12 @@ export default function Home() {
           <li>
             <Link href='/landing'>Landing banners — Variants A & B</Link>
           </li>
+          <li>
+            <Link href='/landing-a'>Landing A — Marketing</Link>
+          </li>
+          <li>
+            <Link href='/landing-b'>Landing B — Technical</Link>
+          </li>
         </ul>
       </main>
     </div>
