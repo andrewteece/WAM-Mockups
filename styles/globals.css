@@ -94,13 +94,13 @@ body {
   font-size: var(--type-base);
 }
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 28px;
+  padding: 40px;
 }
 header.header {
   background: #fff;
-  border-bottom: 1px solid #e6eef6;
+  border-bottom: 1px solid rgba(3, 58, 130, 0.06);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -140,30 +140,36 @@ header.header {
 
 /* SolutionHero / Stripe-like polish */
 .solutionHero {
-  background: linear-gradient(180deg, rgba(3, 58, 130, 0.03), transparent 60%);
-  padding: 56px 0;
+  padding: 72px 0;
+  background: linear-gradient(180deg, #ffffff, #f7fbff);
+}
+.solutionHero .bannerInner {
+  align-items: center;
+  gap: 32px;
 }
 .solutionHero .heroContent {
   flex: 1;
-  max-width: 640px;
+  max-width: 680px;
 }
 .solutionHero .eyebrow {
   font-size: 13px;
   font-weight: 600;
+  color: var(--brand-blue-strong);
   letter-spacing: 0.02em;
-  color: var(--brand-blue);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 .solutionHero .heroTitle {
-  font-size: var(--type-scale-3);
+  font-size: 44px;
   line-height: 1.03;
-  margin: 0 0 12px;
+  margin: 0 0 14px;
   color: var(--dark);
-  font-weight: 700;
+  font-weight: 800;
 }
 .solutionHero .heroSub {
-  font-size: var(--type-scale-1);
-  margin-bottom: 18px;
+  font-size: 17px;
+  margin-bottom: 20px;
+  color: var(--muted);
+  max-width: 56ch;
 }
 
 .bannerCtas .btn {
@@ -173,9 +179,10 @@ header.header {
     var(--brand-blue-strong)
   );
   box-shadow: var(--shadow-sm);
-  border-radius: var(--radius);
-  padding: 12px 16px;
-  font-weight: 600;
+  border-radius: 999px;
+  padding: 12px 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 .bannerCtas .btn:hover {
   box-shadow: var(--shadow-md);
@@ -186,19 +193,22 @@ header.header {
   color: var(--brand-blue-strong);
   border: 1px solid rgba(3, 58, 130, 0.06);
   padding: 10px 14px;
-  border-radius: var(--radius);
+  border-radius: 10px;
 }
 
 .trustRow {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 18px;
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 13px;
 }
 .trustLogos {
   display: flex;
-  gap: 12px;
+  gap: 16px;
   align-items: center;
+  opacity: 0.9;
 }
 
 .heroVisual {
@@ -208,10 +218,11 @@ header.header {
   justify-content: center;
 }
 .heroVisual .visualInner {
-  background: linear-gradient(180deg, rgba(240, 248, 255, 0.8), var(--surface));
-  padding: 18px;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
+  background: var(--surface);
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(3, 58, 130, 0.03);
 }
 
 .nav {
@@ -300,10 +311,10 @@ header.header {
 }
 .card {
   background: var(--surface);
-  padding: 18px;
-  border-radius: var(--radius);
-  border: 1px solid rgba(3, 58, 130, 0.04);
-  box-shadow: var(--shadow-sm);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(3, 58, 130, 0.03);
+  box-shadow: 0 8px 24px rgba(15, 30, 50, 0.04);
 }
 .card h3 {
   margin: 0 0 8px;
