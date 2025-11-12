@@ -110,6 +110,11 @@ header.header {
   height: 28px; /* slightly smaller BAPI wordmark for a lighter header */
   width: auto;
 }
+/* small polish for the header logo to keep it crisp at small sizes */
+.logoLink img {
+  image-rendering: -webkit-optimize-contrast;
+  filter: contrast(1.02) saturate(1.05);
+}
 .header .container {
   display: flex;
   align-items: center;
@@ -726,10 +731,25 @@ footer {
   margin-bottom: 16px;
 }
 
-/* hero wordmark spacing */
+/* hero wordmark spacing and presentation */
 .heroWordmark {
   margin-bottom: 14px;
   transform: translateY(-2px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.98);
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(3, 58, 130, 0.04);
+  box-shadow: 0 8px 28px rgba(2, 28, 49, 0.04);
+}
+.heroWordmark img {
+  display: block;
+  width: 150px; /* slightly larger for better legibility */
+  height: auto;
+  image-rendering: -webkit-optimize-contrast;
+  filter: drop-shadow(0 6px 18px rgba(2, 28, 49, 0.04));
 }
 .solutionHero .heroTitle {
   /* fluid hero title for senior-level scale, but constrained measure to avoid excessive stacking */
