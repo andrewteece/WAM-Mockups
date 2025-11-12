@@ -8,7 +8,7 @@ export default function Home() {
         <title>WAM Mockups — Preview</title>
       </Head>
 
-      <main style={{ maxWidth: 900, margin: '32px auto', padding: 16 }}>
+      <main className='indexMain'>
         <h1>WAM Mockups</h1>
         <p>Choose a variant to preview:</p>
         <ul>
@@ -17,6 +17,9 @@ export default function Home() {
           </li>
           <li>
             <Link href='/mockup2'>Mockup 2 — Technical detail</Link>
+          </li>
+          <li>
+            <Link href='/landing'>Landing banners — Variants A & B</Link>
           </li>
         </ul>
       </main>

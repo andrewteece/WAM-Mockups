@@ -270,8 +270,144 @@ footer {
   .grid {
     grid-template-columns: 1fr;
   }
+
+  .landingIntro {
+    padding-top: 28px;
+  }
+
+  /* Index helpers */
+  .indexMain {
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 16px;
+  }
+
   .nav {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+/* Banner variants */
+.banner {
+  padding: 40px 0;
+}
+.bannerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+.bannerA {
+  background: linear-gradient(180deg, #fff, #f4fbff);
+}
+.bannerLeft {
+  flex: 1;
+}
+.bannerLeft h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.bannerCtas {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+.bannerRight {
+  width: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.deviceHero {
+  background: linear-gradient(135deg, #e8f7ff, #fff);
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #e1f0fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.deviceFace {
+  width: 140px;
+  height: 84px;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--brand-blue);
+  box-shadow: 0 6px 18px rgba(12, 22, 30, 0.04);
+  margin-bottom: 10px;
+}
+.deviceSpecs {
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+
+.bannerB {
+  background: linear-gradient(90deg, #f7fbff, #ffffff);
+}
+.bannerBContent {
+  flex: 1;
+}
+.bannerBContent h2 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+  display: flex;
+  gap: 18px;
+  color: var(--muted);
+}
+.bannerBVisual {
+  width: 320px;
+  height: 160px;
+  position: relative;
+}
+.floatingChart {
+  position: absolute;
+  inset: 12px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #e1f7ff, #ffffff);
+  box-shadow: 0 10px 30px rgba(2, 28, 49, 0.06);
+}
+.floatingNodes {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(0, 123, 200, 0.12);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .bannerInner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bannerRight,
+  .bannerBVisual {
+    width: 100%;
+    height: auto;
   }
 }
