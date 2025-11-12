@@ -621,24 +621,63 @@ footer {
 }
 .featureItem {
   min-width: 0;
-  display: block; /* stack title + copy for a cleaner, professional list */
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
   padding: 6px 0 18px 0;
 }
 .featureIcon {
-  display: none;
-} /* hide icon tiles for a simpler, typographic treatment */
+  display: none; /* enabled on wider screens */
+}
+/* Icon tile used on desktop to anchor each feature visually */
+.featureIconTile {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    var(--brand-blue),
+    var(--brand-blue-strong)
+  );
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 18px rgba(2, 28, 49, 0.06);
+  color: #fff;
+}
 .featureCopy h5 {
   margin: 0 0 8px 0;
-  font-size: 20px;
+  font-size: 22px;
   color: var(--dark);
-  font-weight: 900;
+  font-weight: 800;
 }
 .featureCopy .muted {
   margin: 0;
-  color: var(--muted);
-  font-size: 18px;
+  color: rgba(11, 37, 56, 0.6);
+  font-size: 16px;
   line-height: 1.8;
   max-width: 60ch;
+}
+
+/* Desktop: show icon tiles and add divider between the two feature columns */
+@media (min-width: 900px) {
+  .featureIcon {
+    display: block;
+  }
+  .featureIcon .icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+  .featureRow {
+    gap: 18px 48px;
+  }
+  /* add a subtle divider before second column */
+  .featureRow > .featureItem:nth-child(2) {
+    padding-left: 36px;
+    border-left: 1px solid rgba(3, 58, 130, 0.03);
+  }
 }
 .featureCtas {
   display: flex;
