@@ -36,6 +36,40 @@ const LandingA: NextPage = () => {
           </div>
         </section>
 
+        <section className='container section whyWam'>
+          <h3 className='reveal'>WHY WAM?</h3>
+          <p className='muted reveal'>
+            Traditional asset monitoring methods can be time-consuming,
+            error-prone, and often fail to provide real-time insights. However,
+            with our advanced wireless sensor technology, you can take control
+            of your asset protection strategy like never before. Here's how our
+            solution can transform your business:
+          </p>
+
+          <div className='whyGrid'>
+            <div className='whyMedia'>
+              <Image
+                src='/images/wam-overview-no-background.png'
+                alt='How WAM works illustration'
+                width={720}
+                height={380}
+              />
+            </div>
+
+            <div className='whyText'>
+              <h4>Customizable and Scalable Solutions</h4>
+              <p className='muted'>
+                We understand that every business has unique requirements. Our
+                wireless sensor solutions are customizable to fit your specific
+                needs, ensuring a tailored approach to asset protection.
+                Moreover, our scalable architecture allows you to expand your
+                monitoring system as your business grows, effortlessly adapting
+                to changing demands.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className='container section features'>
           <h3 className='reveal'>Designed for reliable HVAC control</h3>
           <p className='muted reveal'>

@@ -763,6 +763,38 @@ footer {
     width: 100%;
   }
 }
+
+/* Why WAM section styles */
+.whyWam {
+  text-align: left;
+}
+.whyWam .whyGrid {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: 22px;
+}
+.whyWam .whyMedia {
+  flex: 0 0 52%;
+}
+.whyWam .whyText {
+  flex: 1 1 48%;
+  max-width: 54ch;
+}
+.whyWam h4 {
+  color: var(--brand-blue-strong);
+  margin-top: 0;
+  font-size: 20px;
+}
+@media (max-width: 900px) {
+  .whyWam .whyGrid {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .whyWam .whyMedia {
+    width: 100%;
+  }
+}
 .features .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
