@@ -128,7 +128,7 @@ header.header {
 
 /* Increase hero scale for senior-level look */
 .bannerLeft h1 {
-  font-size: 36px;
+  font-size: clamp(26px, 2.6vw + 12px, 40px);
   line-height: 1.05;
 }
 .bannerLeft p {
@@ -160,6 +160,7 @@ header.header {
   color: var(--brand-blue-strong);
   letter-spacing: 0.02em;
   margin-bottom: 10px;
+  object-position: center; /* Ensure visual image positioning is centered */
 }
 .solutionHero .heroTitle {
   font-size: 44px;
@@ -169,10 +170,11 @@ header.header {
   font-weight: 800;
 }
 .solutionHero .heroSub {
-  font-size: 17px;
+  font-size: clamp(18px, 1.6vw + 12px, 22px);
+  line-height: 1.6;
   margin-bottom: 20px;
   color: var(--muted);
-  max-width: 56ch;
+  max-width: 64ch;
 }
 
 /* Debug helper removed — final polish applied */
@@ -218,7 +220,7 @@ header.header {
 }
 
 .heroVisual {
-  width: 520px;
+  width: min(760px, 56vw);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -603,15 +605,17 @@ footer {
   margin-bottom: 12px;
 }
 .solutionHero .heroTitle {
-  font-size: 48px; /* tuned down for balance */
+  /* fluid hero title for senior-level scale */
+  font-size: clamp(34px, 4.6vw + 12px, 64px);
   margin: 0 0 18px;
-  line-height: 1.04;
+  line-height: 1.02;
   color: var(--dark);
   font-weight: 800;
   letter-spacing: -0.02em;
 }
 .solutionHero .heroVisual {
-  flex: 0 0 520px; /* reduced visual width for better balance */
+  flex: 0 0 min(760px, 56vw); /* larger visual for a premium look, responsive cap */
+  width: min(760px, 56vw);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -627,10 +631,20 @@ footer {
 }
 .solutionHero .visualInner {
   background: var(--surface);
-  padding: 36px; /* more breathing room around the image */
-  border-radius: 24px;
-  box-shadow: 0 60px 160px rgba(12, 22, 30, 0.1);
+  padding: 48px; /* generous padding for a premium feel */
+  border-radius: 28px;
+  box-shadow: 0 90px 260px rgba(12, 22, 30, 0.14);
   border: 1px solid rgba(3, 58, 130, 0.04);
+  overflow: hidden; /* ensure the visual can't overflow its rounded container */
+}
+
+/* Make images inside the hero visual responsive and contained */
+.solutionHero .visualInner img,
+.solutionHero .visualInner picture {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .solutionHero .trustRow {
@@ -739,6 +753,19 @@ footer {
 .section {
   padding: 96px 0; /* more breathing room between sections */
 }
+/* Section heading scale for improved hierarchy */
+.section h2 {
+  font-size: clamp(20px, 2.2vw + 10px, 34px);
+  margin: 0 0 12px;
+  color: var(--dark);
+  line-height: 1.12;
+}
+/* Improve paragraph readability inside sections */
+.section p {
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--muted);
+}
 .whatIsWam .twoCol {
   display: flex;
   gap: 40px;
@@ -824,9 +851,16 @@ footer {
   line-height: 1.15;
   margin-bottom: 8px;
 }
+.section h3,
+.bannerLeft h2,
+.bannerBContent h2 {
+  font-size: clamp(16px, 1.4vw + 12px, 20px);
+  color: var(--brand-blue-strong);
+  margin-top: 0;
+}
 .whyWam .muted {
   color: var(--muted);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.75;
 }
 @media (max-width: 900px) {
