@@ -437,6 +437,55 @@ footer {
     object-fit: contain;
     display: block;
   }
+
+  /* Button polish: make secondary and ghost CTAs more tactile and readable */
+  .secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(3, 58, 130, 0.06);
+    background: transparent;
+    color: var(--brand-blue-strong);
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 160ms ease, transform 120ms ease,
+      box-shadow 160ms ease;
+  }
+  .secondary:hover {
+    background: rgba(3, 58, 130, 0.04);
+    transform: translateY(-2px);
+  }
+  .secondary:focus {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 2px;
+  }
+
+  .btn.ghost {
+    background: transparent;
+    color: var(--brand-blue);
+    border: 1px solid rgba(3, 58, 130, 0.06);
+    padding: 10px 14px;
+    border-radius: 10px;
+    box-shadow: none;
+    font-weight: 700;
+  }
+  .btn.ghost:hover {
+    background: rgba(3, 58, 130, 0.04);
+    transform: translateY(-2px);
+  }
+  .btn.ghost:focus {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 2px;
+  }
+
+  /* Make small CTA variants a touch larger and pill-like in banner areas */
+  .bannerCtas .secondary {
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-weight: 700;
+  }
   border: 1px solid #e8f2f9;
 }
 .product-hero {
