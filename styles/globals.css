@@ -749,7 +749,7 @@ footer {
   max-width: 60ch;
 }
 .whatIsWam .colMedia {
-  flex: 0 0 400px;
+  flex: 0 0 520px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -780,7 +780,7 @@ footer {
   max-width: 1200px;
 }
 .whyWam .whyMedia {
-  flex: 0 0 52%;
+  flex: 0 0 56%;
   display: flex;
   align-items: center;
   justify-content: center;

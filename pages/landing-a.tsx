@@ -29,8 +29,8 @@ const LandingA: NextPage = () => {
               <Image
                 src='/images/wam-overview-no-background.png'
                 alt='WAM illustration'
-                width={640}
-                height={360}
+                width={820}
+                height={460}
               />
             </div>
           </div>
@@ -51,8 +51,8 @@ const LandingA: NextPage = () => {
               <Image
                 src='/images/wam-devices.png'
                 alt='WAM devices illustration'
-                width={720}
-                height={380}
+                width={820}
+                height={460}
               />
             </div>
 
