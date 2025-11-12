@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function BannerB() {
   return (
     <section className='banner bannerB' aria-labelledby='banner-b-title'>
