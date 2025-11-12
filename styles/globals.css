@@ -470,6 +470,14 @@ footer {
   min-height: 420px;
   padding: 6px; /* reduce internal padding so the product fills more area */
 }
+.whyWhat .phoneMockBg {
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/wam-overview-no-background-cropped-transparent.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* ensure whole illustration is visible */
+}
 .whyWhat .phoneImg {
   /* Use contain so the full illustration is visible inside the mock card.
      Avoid heavy transforms that can clip content — the cropped asset already
@@ -851,6 +859,14 @@ footer {
   border-radius: 8px;
   background: linear-gradient(135deg, #e1f7ff, #ffffff);
   box-shadow: 0 10px 30px rgba(2, 28, 49, 0.06);
+}
+.floatingChart .chartBg {
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/wam-overview-no-background-cropped-transparent.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .floatingNodes {
   position: absolute;
