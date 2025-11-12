@@ -8,7 +8,7 @@ export default function SolutionHero() {
           <p className='eyebrow muted'>WAM by BAPI</p>
 
           {/* Wordmark near the eyebrow for stronger brand presence */}
-          <div style={{ marginBottom: 12 }} aria-hidden='true'>
+          <div className='heroWordmark' aria-hidden='true'>
             <Image
               src='/images/wam-logo.png'
               alt='WAM logo'

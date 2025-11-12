@@ -594,6 +594,11 @@ footer {
   text-transform: uppercase;
   margin-bottom: 16px;
 }
+
+/* hero wordmark spacing */
+.heroWordmark {
+  margin-bottom: 12px;
+}
 .solutionHero .heroTitle {
   font-size: 56px; /* bold, senior-level headline */
   margin: 0 0 18px;
