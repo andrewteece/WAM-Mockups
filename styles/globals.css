@@ -880,17 +880,70 @@ footer {
   padding: 96px 0; /* more breathing room between sections */
 }
 /* Section heading scale for improved hierarchy */
+.section {
+  padding: 96px 0; /* more breathing room between sections */
+  position: relative;
+}
 .section h2 {
-  font-size: clamp(20px, 2.2vw + 10px, 34px);
-  margin: 0 0 12px;
-  color: var(--dark);
-  line-height: 1.12;
+  /* Strong, branded section headings */
+  font-size: clamp(22px, 3.2vw, 40px);
+  margin: 0 0 18px;
+  color: var(--brand-blue-strong);
+  line-height: 1.04;
+  font-weight: 800;
+  text-rendering: optimizeLegibility;
+  /* create space for the left accent bar */
+  padding-left: 56px;
+}
+.section h2::before {
+  content: '';
+  position: absolute;
+  left: calc(
+    (100% - 1200px) / 2 + 24px
+  ); /* align with container left + gutter */
+  /* On smaller screens this will naturally shift; acceptable for marketing pages */
+  top: calc(var(--section-accent-top, 50%) - 12px);
+  width: 44px;
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    var(--brand-blue),
+    var(--brand-blue-strong)
+  );
+  border-radius: 4px;
+  box-shadow: 0 8px 28px rgba(2, 28, 49, 0.06);
 }
 /* Improve paragraph readability inside sections */
 .section p {
   font-size: 18px;
   line-height: 1.75;
   color: var(--muted);
+}
+/* Eyebrow / small section labels */
+.section .eyebrow,
+.section h3 {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--brand-blue-strong);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1100px) {
+  .section h2::before {
+    left: 40px;
+  }
+}
+
+@media (max-width: 720px) {
+  .section h2 {
+    padding-left: 20px;
+  }
+  .section h2::before {
+    display: none;
+  }
 }
 .whatIsWam .twoCol {
   display: flex;
