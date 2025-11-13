@@ -1462,3 +1462,239 @@ footer {
   }
 }
 
+/* ========================================
+   MOCKUP HUB / INDEX PAGE STYLES
+   ======================================== */
+
+.mockupHub {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.hubMain {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.hubHeader {
+  text-align: center;
+  margin-bottom: 70px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid rgba(0, 114, 206, 0.1);
+}
+
+.hubLogo {
+  height: 60px;
+  width: auto;
+  margin: 0 auto 30px;
+  display: block;
+  filter: drop-shadow(0 2px 8px rgba(0, 114, 206, 0.15));
+}
+
+.hubHeader h1 {
+  font-size: clamp(36px, 5vw, 52px);
+  font-weight: 800;
+  color: var(--dark);
+  margin: 0 0 16px;
+  letter-spacing: -0.02em;
+  background: linear-gradient(
+    135deg,
+    var(--brand-blue-strong),
+    var(--brand-blue)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hubSubtitle {
+  font-size: 19px;
+  color: var(--muted);
+  margin: 0;
+  font-weight: 400;
+}
+
+.mockupGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.mockupSection {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.mockupSection:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.mockupSection:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sectionTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--brand-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 24px;
+  padding-left: 4px;
+}
+
+.mockupCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.mockupCard {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  border: 2px solid rgba(0, 114, 206, 0.08);
+  box-shadow: 0 2px 12px rgba(2, 28, 49, 0.04);
+  transition: all 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mockupCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--brand-blue),
+    var(--brand-blue-strong)
+  );
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mockupCard:hover::before {
+  transform: scaleX(1);
+}
+
+.mockupCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(0, 114, 206, 0.15);
+  border-color: rgba(0, 114, 206, 0.2);
+}
+
+.mockupCard.featured {
+  border-color: var(--brand-blue);
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+}
+
+.cardNumber {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--brand-blue);
+  opacity: 0.4;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.featuredBadge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(
+    135deg,
+    var(--brand-blue),
+    var(--brand-blue-strong)
+  );
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 12px rgba(0, 114, 206, 0.3);
+}
+
+.mockupCard h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.mockupCard p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+  flex: 1;
+}
+
+.cardTag {
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(0, 114, 206, 0.08);
+  color: var(--brand-blue-strong);
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.hubFooter {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(0, 114, 206, 0.1);
+  text-align: center;
+  color: var(--muted);
+}
+
+.hubFooter p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.footerNote {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hubMain {
+    padding: 40px 20px;
+  }
+
+  .hubHeader h1 {
+    font-size: 32px;
+  }
+
+  .mockupCards {
+    grid-template-columns: 1fr;
+  }
+
+  .hubLogo {
+    height: 50px;
+  }
+}
