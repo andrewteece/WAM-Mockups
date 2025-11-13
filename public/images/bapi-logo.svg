@@ -1,0 +1,10 @@
+<svg width="200" height="70" viewBox="0 0 200 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue background -->
+  <rect width="200" height="70" fill="#0066cc" rx="0"/>
+
+  <!-- White diagonal stripe -->
+  <path d="M 0 70 L 0 50 L 50 0 L 70 0 L 0 70 Z" fill="white"/>
+
+  <!-- BAPI text -->
+  <text x="75" y="50" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="bold" fill="white" font-style="italic">BAPI</text>
+</svg>

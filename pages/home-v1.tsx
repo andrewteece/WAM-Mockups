@@ -16,27 +16,13 @@ export default function HomeV1() {
       <nav className='nav'>
         <div className='nav-container'>
           <div className='nav-logo'>
-            <svg
-              width='100'
-              height='36'
-              viewBox='0 0 100 36'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'
-            >
-              <rect width='100' height='36' fill='#0066cc' rx='2' />
-              <text
-                x='50'
-                y='25'
-                fontFamily='Arial, sans-serif'
-                fontSize='20'
-                fontWeight='bold'
-                fill='white'
-                textAnchor='middle'
-                fontStyle='italic'
-              >
-                BAPI
-              </text>
-            </svg>
+            <Image
+              src='/images/bapi-logo.svg'
+              alt='BAPI'
+              width={140}
+              height={50}
+              priority
+            />
           </div>
           <div className='nav-links'>
             <a href='#products'>Products</a>
