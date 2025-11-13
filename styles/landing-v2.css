@@ -964,62 +964,62 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .landing-v2 .heroContent,
-  .landing-v2 .caseStudyContent,
-  .landing-v2 .techFeature {
+  .heroContent,
+  .caseStudyContent,
+  .techFeature {
     flex-direction: column;
     gap: 40px;
   }
 
-  .landing-v2 .heroText,
-  .landing-v2 .heroMedia {
+  .heroText,
+  .heroMedia {
     max-width: 100%;
   }
 
-  .landing-v2 .heroStats {
+  .heroStats {
     gap: 24px;
   }
 
-  .landing-v2 .processGrid {
+  .processGrid {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 32px;
   }
 }
 
 @media (max-width: 768px) {
-  .landing-v2 .sectionHeader h2 {
+  .sectionHeader h2 {
     font-size: 32px;
   }
 
-  .landing-v2 .heroText h1 {
+  .heroText h1 {
     font-size: 34px;
   }
 
-  .landing-v2 .heroStats {
+  .heroStats {
     flex-direction: column;
     gap: 20px;
   }
 
-  .landing-v2 .heroCtas,
-  .landing-v2 .ctaActions {
+  .heroCtas,
+  .ctaActions {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .landing-v2 .heroCtas .btn,
-  .landing-v2 .heroCtas .secondary,
-  .landing-v2 .ctaActions .btn.large,
-  .landing-v2 .ctaActions .secondary.large {
+  .heroCtas .btn,
+  .heroCtas .secondary,
+  .ctaActions .btn.large,
+  .ctaActions .secondary.large {
     width: 100%;
     text-align: center;
   }
 
-  .landing-v2 .outcomeGrid,
-  .landing-v2 .industryGrid {
+  .outcomeGrid,
+  .industryGrid {
     grid-template-columns: 1fr;
   }
 
-  .landing-v2 .ctaBox {
+  .ctaBox {
     padding: 40px 24px;
   }
 }

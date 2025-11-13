@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import '../styles/landing-v2.css';
 
 const LandingAV2: NextPage = () => {
   return (
