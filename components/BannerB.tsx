@@ -1,55 +1,93 @@
-// using native <img> to avoid next/image dev warning about fetchPriority
-
 export default function BannerB() {
   return (
-    <section className='banner bannerB' aria-labelledby='banner-b-title'>
-      <div className='bannerInner container'>
-        <div className='bannerBContent'>
-          <h2 id='banner-b-title' className='reveal'>
-            WAM Software — Monitor, Alert, and Control
-          </h2>
-          <p className='muted reveal'>
-            A technical, data-first banner highlighting integrations, data
-            export, and calibration options.
-          </p>
+    <section
+      aria-labelledby='banner-b-title'
+      className='bg-slate-50 overflow-hidden'
+    >
+      <div className='max-w-6xl mx-auto px-4 py-12 lg:py-20'>
+        <div className='flex flex-col lg:flex-row items-center gap-10 lg:gap-16'>
+          <div className='w-full lg:w-1/2 min-w-0'>
+            <p
+              className='eyebrow'
+              style={{ color: 'var(--brand-blue-strong)' }}
+            >
+              Technical
+            </p>
+            <h2
+              id='banner-b-title'
+              className='mt-3 text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900'
+            >
+              WAM — Monitor, alert, and integrate
+            </h2>
+            <p className='mt-4 text-slate-600'>
+              A compact technical overview focused on data export, integrations,
+              and field calibration options. Designed for engineers and
+              specifiers.
+            </p>
 
-          <ul className='featureList reveal' aria-hidden='false'>
-            <li>Real-time dashboards</li>
-            <li>Exportable CSV & API access</li>
-            <li>Field calibration & probe options</li>
-          </ul>
+            <ul className='mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700'>
+              <li className='inline-flex items-center gap-3'>
+                <span
+                  className='inline-flex h-8 w-8 items-center justify-center rounded-md bg-white shadow'
+                  style={{ color: 'var(--brand-blue)' }}
+                >
+                  📊
+                </span>
+                Real-time dashboards
+              </li>
+              <li className='inline-flex items-center gap-3'>
+                <span
+                  className='inline-flex h-8 w-8 items-center justify-center rounded-md bg-white shadow'
+                  style={{ color: 'var(--brand-blue)' }}
+                >
+                  🔁
+                </span>
+                Exportable CSV & API
+              </li>
+              <li className='inline-flex items-center gap-3'>
+                <span
+                  className='inline-flex h-8 w-8 items-center justify-center rounded-md bg-white shadow'
+                  style={{ color: 'var(--brand-blue)' }}
+                >
+                  🛠️
+                </span>
+                Field calibration & probes
+              </li>
+              <li className='inline-flex items-center gap-3'>
+                <span
+                  className='inline-flex h-8 w-8 items-center justify-center rounded-md bg-white shadow'
+                  style={{ color: 'var(--brand-blue)' }}
+                >
+                  🔒
+                </span>
+                Enterprise security
+              </li>
+            </ul>
 
-          <div className='bannerCtas'>
-            <button type='button' className='btn reveal'>
-              Request Demo
-            </button>
-            <button type='button' className='secondary reveal'>
-              View Docs
-            </button>
+            <div className='mt-8 flex items-center gap-3'>
+              <a href='#' className='btn'>
+                Datasheet
+                <span className='ml-2 text-xs bg-white/10 px-2 py-0.5 rounded'>
+                  PDF · 120KB
+                </span>
+              </a>
+
+              <a href='#' className='secondary'>
+                Request demo
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div className='bannerBVisual' aria-hidden='true'>
-          <div className='floatingChart'>
-            <picture>
-              <source
-                srcSet='/images/wam-overview-no-background-cropped-transparent.webp'
-                type='image/webp'
-              />
+          <div className='w-full lg:w-1/2 flex justify-center lg:justify-end min-w-0'>
+            <div className='w-full max-w-full lg:max-w-md rounded-lg shadow-lg overflow-hidden bg-white'>
               <img
-                src='/images/wam-overview-no-background-cropped-transparent.png'
+                src='/images/wam-overview-no-background.png'
                 alt='WAM overview diagram'
-                className='chartImg'
+                className='w-full h-auto object-contain'
+                loading='eager'
+                decoding='async'
               />
-            </picture>
-          </div>
-          <div className='floatingNodes'>
-            <img
-              src='/images/wam-logo.png'
-              alt='WAM logo'
-              width={48}
-              height={48}
-            />
+            </div>
           </div>
         </div>
       </div>

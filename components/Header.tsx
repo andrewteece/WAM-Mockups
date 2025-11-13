@@ -10,10 +10,10 @@ export default function Header() {
         </Link>
 
         <nav className='navLinks' aria-label='Primary'>
-          <Link href='#'>Solutions</Link>
-          <Link href='#'>Products</Link>
-          <Link href='#'>About Us</Link>
-          <Link href='#'>Contact</Link>
+          <Link href='/mockup1'>Mockup 1</Link>
+          <Link href='/mockup2'>Mockup 2</Link>
+          <Link href='/landing-a'>Landing A</Link>
+          <Link href='/landing-b'>Landing B</Link>
         </nav>
       </div>
     </header>

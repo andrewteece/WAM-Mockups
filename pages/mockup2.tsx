@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Header from '../components/Header';
 
 const Mockup2: NextPage = () => {
   return (
@@ -9,16 +10,7 @@ const Mockup2: NextPage = () => {
       </Head>
 
       <div className='wrap'>
-        <header className='headerSmall'>
-          <div>
-            <div className='brand'>BAPI — WAM</div>
-            <div className='meta'>Draft 2 — Technical variant</div>
-          </div>
-          <div style={{ display: 'flex', gap: 10 }}>
-            <button className='secondary'>All Products</button>
-            <button className='btn'>Request Sample</button>
-          </div>
-        </header>
+        <Header />
 
         <div className='layout'>
           <aside className='panel' aria-label='Product details panel'>
