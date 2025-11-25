@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Script from 'next/script';
 import { useEffect, useState } from 'react';
 
 export default function HomeV2() {
@@ -33,28 +32,7 @@ export default function HomeV2() {
         />
       </Head>
 
-      {/* Tailwind CDN - only loads on this page */}
-      <Script src='https://cdn.tailwindcss.com' strategy='beforeInteractive' />
-      <Script
-        id='tailwind-config'
-        strategy='beforeInteractive'
-        dangerouslySetInnerHTML={{
-          __html: `
-            tailwind.config = {
-              darkMode: 'class',
-              theme: {
-                extend: {
-                  colors: {
-                    'bapi-blue': '#0066cc',
-                    'bapi-blue-dark': '#004999',
-                    'bapi-yellow': '#ffc843',
-                  }
-                }
-              }
-            }
-          `,
-        }}
-      />
+      {/* Tailwind is provided via PostCSS build in production — CDN removed */}
 
       <div className={isDark ? 'dark' : ''}>
         <div className='min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300'>
