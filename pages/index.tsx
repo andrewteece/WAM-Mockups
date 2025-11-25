@@ -46,6 +46,84 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Wireframes Section */}
+          <div className='mockupSection'>
+            <h2 className='sectionTitle'>Wireframes</h2>
+            <div className='mockupCards wireframeGrid'>
+              <a
+                href='/images/wireframe-1.svg'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='mockupCard wireframeCard'
+              >
+                <div className='cardNumber'>10</div>
+                <img src='/images/wireframe-1.svg' alt='Wireframe 1' />
+                <h3>Wireframe 1</h3>
+                <p>Homepage wireframe (attached)</p>
+              </a>
+
+              <a
+                href='/images/wireframe-2.svg'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='mockupCard wireframeCard'
+              >
+                <div className='cardNumber'>11</div>
+                <img src='/images/wireframe-2.svg' alt='Wireframe 2' />
+                <h3>Wireframe 2</h3>
+                <p>Promo + tile layout (attached)</p>
+              </a>
+
+              <a
+                href='/images/wireframe-3.svg'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='mockupCard wireframeCard'
+              >
+                <div className='cardNumber'>12</div>
+                <img src='/images/wireframe-3.svg' alt='Wireframe 3' />
+                <h3>Wireframe 3</h3>
+                <p>Industry / grid wireframe (attached)</p>
+              </a>
+
+              <a
+                href='/images/wireframe-4.svg'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='mockupCard wireframeCard'
+              >
+                <div className='cardNumber'>13</div>
+                <img src='/images/wireframe-4.svg' alt='Wireframe 4' />
+                <h3>Wireframe 4</h3>
+                <p>Product detail layout (attached)</p>
+              </a>
+
+              <a
+                href='/images/wireframe-5.svg'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='mockupCard wireframeCard'
+              >
+                <div className='cardNumber'>14</div>
+                <img src='/images/wireframe-5.svg' alt='Wireframe 5' />
+                <h3>Wireframe 5</h3>
+                <p>Applications + branding (attached)</p>
+              </a>
+
+              <a
+                href='/images/wireframe-6.svg'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='mockupCard wireframeCard'
+              >
+                <div className='cardNumber'>15</div>
+                <img src='/images/wireframe-6.svg' alt='Wireframe 6' />
+                <h3>Wireframe 6</h3>
+                <p>Content + contact layout (attached)</p>
+              </a>
+            </div>
+          </div>
+
           {/* Landing Pages Section */}
           <div className='mockupSection'>
             <h2 className='sectionTitle'>Landing Pages</h2>

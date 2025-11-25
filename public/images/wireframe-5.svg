@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="100%" height="100%" fill="#f2f2f2"/>
+  <rect x="80" y="80" width="1040" height="260" fill="#e6e6e6"/>
+  <rect x="140" y="380" width="920" height="200" fill="#e6e6e6"/>
+  <rect x="140" y="610" width="200" height="120" fill="#e6e6e6"/>
+  <rect x="360" y="610" width="200" height="120" fill="#e6e6e6"/>
+  <rect x="580" y="610" width="200" height="120" fill="#e6e6e6"/>
+  <rect x="800" y="610" width="200" height="120" fill="#e6e6e6"/>
+  <text x="120" y="56" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#666">Wireframe 5 — Applications + Branding</text>
+</svg>
