@@ -109,6 +109,28 @@ export default function Home() {
               </Link>
             </div>
           </div>
+
+          {/* Headless Projects Section */}
+          <div className='mockupSection'>
+            <h2 className='sectionTitle'>Headless Projects</h2>
+            <div className='mockupCards'>
+              <a
+                href='https://bapi-headless.vercel.app/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='mockupCard featured'
+              >
+                <div className='cardNumber'>09</div>
+                <div className='featuredBadge'>HEADLESS</div>
+                <h3>BAPI Headless — WP + Next.js</h3>
+                <p>
+                  Headless WordPress homepage built with Next.js — external
+                  preview
+                </p>
+                <span className='cardTag'>Headless</span>
+              </a>
+            </div>
+          </div>
         </div>
 
         <footer className='hubFooter'>
