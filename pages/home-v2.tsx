@@ -13,9 +13,20 @@ export default function HomeV2() {
     }
   }, []);
 
+  // Keep `dark` class applied to the root html element so Header and global
+  // components pick up dark styles. Persist preference to localStorage.
   useEffect(() => {
-    // Save theme preference
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    try {
+      if (isDark) {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      }
+    } catch (e) {
+      // server-side or restricted env — ignore
+    }
   }, [isDark]);
 
   const toggleTheme = () => {
