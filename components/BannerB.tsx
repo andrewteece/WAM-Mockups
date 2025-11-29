@@ -7,10 +7,7 @@ export default function BannerB() {
       <div className='max-w-6xl mx-auto px-4 py-12 lg:py-20'>
         <div className='flex flex-col lg:flex-row items-center gap-10 lg:gap-16'>
           <div className='w-full lg:w-1/2 min-w-0'>
-            <p
-              className='eyebrow'
-              style={{ color: 'var(--brand-blue-strong)' }}
-            >
+            <p className='eyebrow text-brand-blue-strong'>
               Technical
             </p>
             <h2
@@ -27,36 +24,32 @@ export default function BannerB() {
 
             <ul className='mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700'>
               <li className='inline-flex items-center gap-3'>
-                <span
-                  className='inline-flex h-8 w-8 items-center justify-center rounded-md bg-white shadow'
-                  style={{ color: 'var(--brand-blue)' }}
+                <span className='inline-flex h-8 w-8 items-center justify-center rounded-md bg-white shadow text-brand-blue'>
+
                 >
                   📊
                 </span>
                 Real-time dashboards
               </li>
               <li className='inline-flex items-center gap-3'>
-                <span
-                  className='inline-flex h-8 w-8 items-center justify-center rounded-md bg-white shadow'
-                  style={{ color: 'var(--brand-blue)' }}
+                <span className='inline-flex h-8 w-8 items-center justify-center rounded-md bg-white shadow text-brand-blue'>
+
                 >
                   🔁
                 </span>
                 Exportable CSV & API
               </li>
               <li className='inline-flex items-center gap-3'>
-                <span
-                  className='inline-flex h-8 w-8 items-center justify-center rounded-md bg-white shadow'
-                  style={{ color: 'var(--brand-blue)' }}
+                <span className='inline-flex h-8 w-8 items-center justify-center rounded-md bg-white shadow text-brand-blue'>
+
                 >
                   🛠️
                 </span>
                 Field calibration & probes
               </li>
               <li className='inline-flex items-center gap-3'>
-                <span
-                  className='inline-flex h-8 w-8 items-center justify-center rounded-md bg-white shadow'
-                  style={{ color: 'var(--brand-blue)' }}
+                <span className='inline-flex h-8 w-8 items-center justify-center rounded-md bg-white shadow text-brand-blue'>
+
                 >
                   🔒
                 </span>

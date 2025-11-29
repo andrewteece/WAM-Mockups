@@ -66,7 +66,7 @@ const Mockup1: NextPage = () => {
                   <h3>
                     {p[0]} — {p[1]}
                   </h3>
-                  <p style={{ color: 'var(--muted)' }}>{p[2]}</p>
+                  <p className='muted'>{p[2]}</p>
                 </article>
               ))}
             </div>
@@ -79,22 +79,11 @@ const Mockup1: NextPage = () => {
                 Select a product to view detailed specs, wiring diagrams and
                 accessory lists.
               </p>
-              <div style={{ display: 'flex', gap: 10 }}>
-                <button className='btn' style={{ flex: 1 }}>
-                  Spec Sheet
-                </button>
-                <button className='btn ghost' style={{ flex: 1 }}>
-                  Wiring
-                </button>
+              <div className='flex gap-2'>
+                <button className='btn flex-1'>Spec Sheet</button>
+                <button className='btn ghost flex-1'>Wiring</button>
               </div>
-              <div
-                className='muted'
-                style={{
-                  marginTop: 12,
-                  borderTop: '1px dashed var(--bg)',
-                  paddingTop: 12,
-                }}
-              >
+              <div className='muted muted-divider'>
                 <strong>Contact local rep</strong>
                 <br />
                 Call: (555) 555‑5555

@@ -404,10 +404,10 @@ footer {
   margin-top: 18px;
 }
 .fontSample {
-  background: rgba(255,255,255,0.6);
+  background: rgba(255, 255, 255, 0.6);
   padding: 18px;
   border-radius: 10px;
-  border: 1px solid rgba(3,58,130,0.04);
+  border: 1px solid rgba(3, 58, 130, 0.04);
 }
 .fontSample h1 {
   margin: 8px 0 12px;
@@ -426,10 +426,33 @@ footer {
 }
 
 /* Font-family utility classes for comparison */
-.ff-montserrat { font-family: Montserrat, Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
-.ff-inter { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
-.ff-merriweather { font-family: Merriweather, Georgia, 'Times New Roman', serif; }
-.ff-verdana-pro { font-family: 'Verdana Pro', Verdana, Geneva, Tahoma, sans-serif; }
+.ff-montserrat {
+  font-family: Montserrat, Inter, system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+}
+.ff-inter {
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+}
+.ff-merriweather {
+  font-family: Merriweather, Georgia, 'Times New Roman', serif;
+}
+.ff-verdana-pro {
+  font-family: 'Verdana Pro', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Utility classes to replace inline style usages */
+.text-brand-blue {
+  color: var(--brand-blue);
+}
+.text-brand-blue-strong {
+  color: var(--brand-blue-strong);
+}
+.muted-divider {
+  margin-top: 12px;
+  border-top: 1px dashed var(--bg);
+  padding-top: 12px;
+}
 
 /* Controls for the Font Comparison UI */
 .fontControls {
@@ -447,24 +470,36 @@ footer {
 .controlInput {
   padding: 8px 10px;
   border-radius: 8px;
-  border: 1px solid rgba(3,58,130,0.08);
+  border: 1px solid rgba(3, 58, 130, 0.08);
   min-width: 220px;
 }
 .controlSelect {
   padding: 8px 10px;
   border-radius: 8px;
-  border: 1px solid rgba(3,58,130,0.08);
+  border: 1px solid rgba(3, 58, 130, 0.08);
 }
 
 /* Sample size utilities */
-.sample-sm { font-size: 18px; }
-.sample-md { font-size: 28px; }
-.sample-lg { font-size: 36px; }
+.sample-sm {
+  font-size: 18px;
+}
+.sample-md {
+  font-size: 28px;
+}
+.sample-lg {
+  font-size: 36px;
+}
 
 /* Weight utilities mapping to common font-weight numbers */
-.weight-regular { font-weight: 400; }
-.weight-medium { font-weight: 600; }
-.weight-bold { font-weight: 800; }
+.weight-regular {
+  font-weight: 400;
+}
+.weight-medium {
+  font-weight: 600;
+}
+.weight-bold {
+  font-weight: 800;
+}
 
 /* Mockup 2 specific */
 .wrap {
